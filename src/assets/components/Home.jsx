@@ -123,22 +123,10 @@ const Home = () => {
                                     alt={weather.weather[0].description}
                                   />
                                   <Carousel.Caption>
-                                    <h3>Giorno da aggiornare</h3>
-                                    <p className="text-black">
+                                    <p className="text-black ">
                                       Temp:
                                       {Math.round(weather.main.temp - 273.15)}
                                       °C
-                                      <br />
-                                      Min:
-                                      {Math.round(
-                                        weather.main.temp_min - 273.15
-                                      )}
-                                      °C / Max:
-                                      {Math.round(
-                                        weather.main.temp_max - 273.15
-                                      )}
-                                      °C
-                                      {weather.weather[0].description}
                                     </p>
                                   </Carousel.Caption>
                                 </Carousel.Item>
